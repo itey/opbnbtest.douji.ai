@@ -1,0 +1,19 @@
+.connect-button,
+.connect-button:focus {
+	height: 42px;
+  width: 182px;
+	background: linear-gradient(-16deg, #4195F6, #17E7D6);
+	border-radius: 6px;
+	font-size: 16px;
+	font-family: Source Han Sans CN;
+	font-weight: bold;
+	color: #131B1F;
+	border: none;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.connect-button:hover {
+	background: linear-gradient(-16deg, #3786e1, #19bbae);
+	cursor: pointer;
+}
