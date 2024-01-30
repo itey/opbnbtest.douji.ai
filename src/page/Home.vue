@@ -926,7 +926,9 @@ export default {
       this.$set(this.loading, "news", true);
       Promise.all([this.getSelectedList(), this.getHotNewsList()])
         .then(() => {
-          this.bannerNews = this.hotNewsList[0];
+          if (this.hotNewsList.length) {
+            this.bannerNews = this.hotNewsList[0];
+          }
         })
         .catch((e) => {
           console.log(e);
